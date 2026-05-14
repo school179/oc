@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Новости — Олимпиадный Центр</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Логотип" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="logo-placeholder" style="display:none">ОЦ</div>
+        <div class="logo-text">
+          <span class="logo-title">Олимпиадный Центр</span>
+          <span class="logo-subtitle">Гимназия №179</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="news.html" class="nav-link active">Новости</a></li>
+          <li><a href="olympiads.html" class="nav-link">Олимпиады</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="about.html" class="nav-link">О нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Главная</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Новости</span>
+    </div>
+    <h1>Новости и события</h1>
+    <p>Последние достижения учеников, мероприятия Олимпиадного Центра и важные обновления.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Search + Filter -->
+    <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:32px">
+      <div class="search-box" style="flex:1;min-width:240px;max-width:400px">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="news-search" placeholder="Поиск по новостям..." />
+      </div>
+      <div class="filter-bar" style="margin-bottom:0">
+        <button class="filter-btn active" data-news="all">Все</button>
+        <button class="filter-btn" data-news="achievement">🏆 Достижения</button>
+        <button class="filter-btn" data-news="event">📅 Мероприятия</button>
+        <button class="filter-btn" data-news="update">📂 Обновления</button>
+        <button class="filter-btn" data-news="announcement">📢 Анонсы</button>
+      </div>
+    </div>
+
+    <!-- Featured + Sidebar (заполняется из news-data.js) -->
+    <div class="news-featured" id="news-featured-section">
+      <p class="text-muted">Загрузка...</p>
+    </div>
+
+    <!-- Все новости (заполняется из news-data.js) -->
+    <h3 style="font-size:20px;font-weight:700;margin-bottom:24px">Все новости</h3>
+    <div id="news-grid" class="grid-3" style="row-gap:24px">
+      <p class="text-muted">Загрузка...</p>
+    </div>
+
+    <!-- Load more / Collapse -->
+    <div class="text-center mt-32" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <button id="load-more-btn" class="btn btn-outline btn-lg">Загрузить ещё</button>
+      <button id="collapse-btn" class="btn btn-outline btn-lg" style="display:none">Свернуть ↑</button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><img src="img/oc.png" alt="ОЦ" class="logo-img" onerror="this.style.display='none'"><div class="logo-text"><span class="logo-title">Олимпиадный Центр</span><span class="logo-subtitle">Гимназия №179</span></div></div>
+        <p class="footer-desc">Ученическая организация, которая помогает школьникам готовиться к олимпиадам.</p>
+      </div>
+      <div><div class="footer-heading">Разделы</div><ul class="footer-links"><li><a href="index.html">Главная</a></li><li><a href="news.html">Новости</a></li><li><a href="olympiads.html">Олимпиады</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">О нас</a></li></ul></div>
+      <div><div class="footer-heading">Предметы</div><ul class="footer-links"><li><a href="subject.html?subject=math">Математика</a></li><li><a href="subject.html?subject=physics">Физика</a></li><li><a href="subject.html?subject=cs">Информатика</a></li><li><a href="subject.html?subject=english">Английский</a></li><li><a href="olympiads.html">Все предметы →</a></li></ul></div>
+      <div><div class="footer-heading">Контакты</div><div class="footer-contact"><div class="footer-contact-item"><span class="icon">📧</span><span>olympiadcentre@mail.ru</span></div><div class="footer-contact-item"><span class="icon">📱</span><span>Telegram: t.me/olympiadcenter179</span></div></div></div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="container"><div class="footer-bottom"><span>© 2025–2027 Олимпиадный Центр Гимназии №179</span><span>Сделано учениками для учеников 🏆</span></div></div>
+</footer>
+
+<script src="js/news-data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

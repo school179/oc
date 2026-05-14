@@ -395,7 +395,6 @@ const SUBJECTS = {
     ],
     materials: [
       { icon: '🀄', title: 'Учебное пособие по страноведению', desc: 'Пособие по страноведению Китая с текстами и тематической лексикой на китайском.', file: 'files/Chinese/kitay_yazyk_uch_posobie_stranovedenie.pdf' },
-      { icon: '🀄', title: 'Регионоведение Китая', desc: 'Пособие по регионоведению Китая на русском.', file: 'files/Chinese/Uchebnik_Regionovedenie_Kitay_vk_com_onechinese.pdf' },
       { icon: '🀄', title: 'Система палладия', desc: 'Список китайских слогов и их русскоязычное написание.', file: 'files/Chinese/система палладия.docx' },
     ],
     tips: [

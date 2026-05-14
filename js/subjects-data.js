@@ -71,7 +71,6 @@ const SUBJECTS = {
       { icon: '🧪', title: 'Теоретическая и математическая химия - Ерёмин', desc: '#', file: 'files/Chemistry/Eremin_V_V_Teoreticheskaya_i_matematicheskaya.pdf' },
       { icon: '🔬', title: 'Качественные реакции в неорганике', desc: '#', file: 'files/Chemistry/Kachestvennye_reaktsii_v_neorganike.pdf' },
       { icon: '⚗️', title: 'Химия в уравнениях реакций - Кочкаров', desc: '#', file: 'files/Chemistry/Khimia_v_uravneniakh_reaktsiy_Uchebnoe_posobie_Kochkarov_Zh_A__2019.pdf' },
-      { icon: '🧪', title: 'Неорганическая химия - Шевельков', desc: '#', file: 'files/Chemistry/А_В_Шевельков,_Неорганическая_химия_Учебник.pdf' },
       { icon: '🔬', title: 'Таблица кислот по силе', desc: '#', file: 'files/Chemistry/Кислоты по силе.jpg' },
       { icon: '⚗️', title: 'Расширенная таблица растворимости', desc: '#', file: 'files/Chemistry/Расширенная таблица растворимости.jpg' },
       { icon: '🧪', title: 'Цвета пламени металлов', desc: '#', file: 'files/Chemistry/Цвета пламени металлов.jpg' },
